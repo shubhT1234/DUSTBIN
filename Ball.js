@@ -14,7 +14,8 @@ class Ball {
       display(){
         var angle = this.body.angle;
         var pos =this.body.position;
-        
+        pos.x=mouseX;
+          pos.y=mouseY;
         push();
         translate(this.body.position.x, this.body.position.y);
         rotate(angle);
